@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rohit Kumar | Software Engineer</title>
+  <style>
+    :root {
+      --primary: #64b5f6;
+      --secondary: #90caf9;
+      --accent: #1e3a8a;
+      --light-bg: linear-gradient(to bottom right, #0f172a, #1e293b);
+      --text-dark: #f1f5f9;
+      --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      --highlight-border: #3b82f6;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--light-bg);
+      color: var(--text-dark);
+      line-height: 1.6;
+      opacity: 0;
+      transform: rotateY(90deg);
+      animation: fadeIn3D 1s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn3D {
+      0% {
+        opacity: 0;
+        transform: rotateY(90deg) scale(0.8);
+      }
+      100% {
+        opacity: 1;
+        transform: rotateY(0deg) scale(1);
+      }
+    }
+
+    header {
+      background: linear-gradient(135deg, #2563eb, #ffb6c1, #fca5a5);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+      box-shadow: var(--box-shadow);
+    }
+    header h1 {
+  font-size: 3rem;
+  margin: 0;
+  animation: typing 3s steps(20, end), blink-caret 0.75s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  color: #facc15;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+    header p {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  animation: fadeInText 3s ease-in 3s forwards;
+  opacity: 0;
+  color: #ffe4e6;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+    section {
+      background: rgba(255, 255, 255, 0.05);
+      margin: 25px auto;
+      padding: 30px;
+      max-width: 900px;
+      border-radius: 15px;
+      box-shadow: var(--box-shadow);
+      border-left: 8px solid var(--highlight-border);
+    }
+    h2.section-title {
+  color: var(--secondary);
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideInTitle 1s ease-in-out forwards;
+}
+    ul {
+      list-style-type: circle;
+      padding-left: 25px;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    .contact p,
+    section p {
+      margin: 6px 0;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    h3 {
+      margin-top: 20px;
+      color: var(--secondary);
+    }
+    .highlight-box {
+      background: linear-gradient(120deg, #1e3a8a, #2563eb);
+      border-left: 5px solid var(--highlight-border);
+      padding: 10px 15px;
+      margin: 10px 0 20px;
+      border-radius: 8px;
+      color: #f8fafc;
+    }
+    .highlight-box strong {
+      color: #facc15;
+    }
+    .scroll-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--highlight-border);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: var(--box-shadow);
+      display: none;
+      transition: background 0.3s;
+    }
+    .scroll-top:hover {
+      background: #2563eb;
+    }
+  @keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+
+@keyframes fadeInText {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+  50% { border-color: white }
+}
+.highlight-box:hover {
+  transform: scale(1.03);
+  background: linear-gradient(120deg, #3b82f6, #1e40af);
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+}
+
+button.scroll-top:hover {
+  transform: scale(1.1);
+}
+@keyframes slideInTitle {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>Rohit Kumar</h1>
+    <p>Software Engineer</p>
+  </header>
+
+  <section class="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="highlight-box"><strong>Location:</strong> Kolkata</div>
+    <div class="highlight-box"><strong>Email:</strong> ray312393@gmail.com</div>
+    <div class="highlight-box"><strong>Phone:</strong> 7979867067</div>
+    <div class="highlight-box"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rohitkumarcontact7979" target="_blank">rohitkumarcontact7979</a></div>
+  </section>
+
+  <section>
+    <h2 class="section-title">About Me</h2>
+    <div class="highlight-box">
+      I’m a passionate and dedicated <strong>Software Engineer</strong> with a B.E. in Computer Science and Engineering. I have a strong interest in <strong>Java development</strong> and love building scalable, efficient solutions. My goal is to work with a reputed <strong>MNC</strong> where I can apply my skills, grow professionally, and contribute meaningfully to the team. Known for being <strong>hardworking</strong> and having <strong>good communication skills</strong>, I’m always eager to learn and take on new challenges in the tech world.
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Skills</h2>
+    <ul>
+      <li><strong>Frontend:</strong> HTML, CSS, JavaScript, Angular</li>
+      <li><strong>Backend:</strong> Java, Spring Boot, Node.js</li>
+      <li><strong>Database:</strong> MySQL, PostgreSQL</li>
+      <li><strong>Tools & Others:</strong> Git, VS Code, Postman</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="section-title">Projects</h2>
+    <h3>E-Learning Management System</h3>
+    <div class="highlight-box">
+      An online platform that allows students to register, view courses, and access learning materials.<br>
+      <strong>Tech Stack:</strong> PHP, MySQL, XAMPP<br>
+      <strong>Role:</strong> Designed and developed the full website including backend logic and database connectivity.
+    </div>
+
+    <h3>Job Portal (Recruitment System)</h3>
+    <div class="highlight-box">
+      A recruitment web application for job seekers and recruiters to post and apply for jobs.<br>
+      <strong>Tech Stack:</strong> MERN Stack (MongoDB, Express.js, React, Node.js)<br>
+      <strong>Role:</strong> Created the frontend using React and Bootstrap, and developed RESTful APIs using Node.js.
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Education</h2>
+    <div class="highlight-box">
+      <strong>Bachelor of Engineering (B.E.) in Computer Science and Engineering</strong><br>
+      Excel Engineering College, Tamil Nadu — <em>2025</em>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Training</h2>
+    <div class="highlight-box">
+      <strong>Java Full Stack Trainee – TNS Capgemini</strong>
+      <ul>
+        <li>Gained hands-on experience in Java, Spring Boot, RESTful APIs, and Angular.</li>
+        <li>Built real-time projects and worked on both frontend and backend modules.</li>
+        <li>Strengthened understanding of full stack development through practical assignments.</li>
+      </ul>
+    </div>
+  </section>
+
+  <button class="scroll-top" onclick="scrollToTop()">↑ Top</button>
+
+  <script>
+    // Show scroll-to-top button on scroll
+    const scrollBtn = document.querySelector(".scroll-top");
+    window.onscroll = function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        scrollBtn.style.display = "block";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
